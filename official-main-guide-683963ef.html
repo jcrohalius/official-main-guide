@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>杂志专题 · 世界杯资料索引</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #f5efe8;
+      font-family: 'Georgia', 'Times New Roman', 'Songti SC', serif;
+      color: #2c2b28;
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #fcf9f5;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.03), 0 2px 6px rgba(0,0,0,0.02);
+    }
+
+    /* 首页横幅 */
+    .hero {
+      text-align: center;
+      padding: 2.8rem 1rem 1.8rem;
+      border-bottom: 1px solid #dcd3ca;
+      margin-bottom: 2.2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #1e1d1b;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero .subhead {
+      font-size: 0.95rem;
+      color: #7d756b;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-top: 1px solid #d4c9be;
+      display: inline-block;
+      padding-top: 0.5rem;
+      margin-top: 0.2rem;
+    }
+
+    /* 背景说明 */
+    .background-note {
+      background: #efe9e0;
+      padding: 1.4rem 1.8rem;
+      border-left: 6px solid #b8a795;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .background-note strong {
+      color: #3e3730;
+    }
+
+    /* 三段介绍卡片风格 */
+    .intro-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .intro-card {
+      background: #faf6f1;
+      padding: 1.6rem 1.8rem;
+      border: 1px solid #e4dbd0;
+      border-radius: 10px;
+      transition: background 0.15s;
+    }
+
+    .intro-card:hover {
+      background: #f4eee7;
+    }
+
+    .intro-card h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #3c352e;
+      border-bottom: 1px dashed #d2c5b6;
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.5px;
+    }
+
+    .intro-card p {
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .intro-card .meta {
+      font-size: 0.85rem;
+      color: #8f8477;
+      margin-top: 0.4rem;
+    }
+
+    /* 引用块 / 提示框 */
+    .pullquote {
+      background: #fcf4ec;
+      padding: 1.2rem 2rem 1.2rem 1.8rem;
+      margin: 2rem 0 1.8rem;
+      border-radius: 30px 10px 10px 30px;
+      border-left: 8px solid #b5a28f;
+      font-style: italic;
+      font-size: 1rem;
+      color: #4f463d;
+      position: relative;
+    }
+
+    .pullquote::before {
+      content: "“";
+      font-size: 3.2rem;
+      color: #c8b9a8;
+      position: absolute;
+      left: 0.2rem;
+      top: -0.2rem;
+      line-height: 1;
+    }
+
+    .pullquote span {
+      display: block;
+      font-style: normal;
+      font-size: 0.85rem;
+      color: #7c7165;
+      margin-top: 0.5rem;
+    }
+
+    /* 页尾访问提示 */
+    .footer-note {
+      border-top: 1px solid #ddd4c9;
+      padding-top: 1.8rem;
+      margin-top: 1.2rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #5a5249;
+    }
+
+    .footer-note a {
+      color: #5f4d3b;
+      text-decoration: none;
+      border-bottom: 1px dotted #b7a999;
+      font-weight: 500;
+    }
+
+    .footer-note a:hover {
+      color: #2f2821;
+      border-bottom: 1px solid #6b5b4b;
+    }
+
+    .footer-note .small-meta {
+      margin-top: 0.8rem;
+      font-size: 0.82rem;
+      color: #9d9285;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 1rem 0.8rem; }
+      .page { padding: 1.8rem 1rem; }
+      .hero h1 { font-size: 2rem; }
+      .intro-card { padding: 1.2rem 1.2rem; }
+      .pullquote { padding: 1rem 1.2rem 1rem 1.2rem; margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- 首页横幅 -->
+  <div class="hero">
+    <h1>世界杯 · 信息地志</h1>
+    <div class="subhead">资料整理 &amp; 索引专题</div>
+  </div>
+
+  <!-- 背景说明 -->
+  <div class="background-note">
+    <strong>关于本辑</strong> —— 我们尝试以资料员的视角，将散落于各处的赛事档案、球队沿革、经典瞬间重新梳理。不追求独家爆料，只做安静的资料架。每一页都来自公开信息，每一次回看都是对足球记忆的再次归档。
+  </div>
+
+  <!-- 三段自然介绍 -->
+  <div class="intro-grid">
+    <div class="intro-card">
+      <h2>① 历届冠军与赛历</h2>
+      <p>从1930年蒙得维的亚到最近一届大赛，我们整理了完整的冠军名录、决赛比分与主办国信息。同时标注了每一届的赛制变化、参赛队伍数量以及标志性比赛用球。适合快速查阅或横向对比不同年代的竞争格局。</p>
+      <div class="meta">涵盖 1930–2026 · 数据来源：FIFA 官方记录</div>
+    </div>
+
+    <div class="intro-card">
+      <h2>② 球队·球员·故事线</h2>
+      <p>每支夺冠队伍的晋级路线、核心阵容以及关键比赛回顾，以时间线的方式排列。同时收录了一些非冠军球队的高光时刻——那些被记住的逆转、点球大战和意外冷门。球员部分以历届金靴、金球奖得主为线索，附带简短传记。</p>
+      <div class="meta">超过 120 支国家队 · 800+ 球员条目</div>
+    </div>
+
+    <div class="intro-card">
+      <h2>③ 场馆与文化遗产</h2>
+      <p>每一届世界杯都会留下标志性场馆。从马拉卡纳到柏林奥林匹克，从卢日尼基到卢塞尔，我们整理了体育场的容量、设计特色以及赛后用途。此外还包括当届会徽、吉祥物、官方海报与主题曲，它们同样是世界足球文化的一部分。</p>
+      <div class="meta">场馆档案 · 视觉遗产 · 文化侧记</div>
+    </div>
+  </div>
+
+  <!-- 引用 / 提示框 -->
+  <div class="pullquote">
+    资料整理不是简单的搬运，而是把零散的碎片拼成一张可以反复查看的地图。
+    <span>—— 摘自资料笔记 · 2025</span>
+  </div>
+
+  <!-- FAQ 摘要（克制风格） -->
+  <div style="margin: 1.6rem 0 2rem; border: 1px solid #e6ddd2; border-radius: 10px; padding: 1.2rem 1.6rem; background: #fcf9f5;">
+    <h3 style="font-weight: 500; font-size: 1rem; letter-spacing: 1px; color: #52493f; margin-bottom: 0.4rem; border-left: 3px solid #b7a692; padding-left: 0.7rem;">常见索引问题</h3>
+    <ul style="list-style: none; padding: 0.3rem 0 0 0.7rem; font-size: 0.92rem; color: #4b443c;">
+      <li style="margin-bottom: 0.3rem;">· 资料是否持续更新？ —— 是，配合每届赛事结束后补充</li>
+      <li style="margin-bottom: 0.3rem;">· 能否找到早期预选赛数据？ —— 部分收录，优先决赛阶段</li>
+      <li style="margin-bottom: 0.3rem;">· 是否有下载或打印版？ —— 目前仅限在线浏览</li>
+    </ul>
+  </div>
+
+  <!-- 页尾访问提示：自然嵌入链接，文本严格等于“世界杯” -->
+  <div class="footer-note">
+    <p>
+      如果你正在寻找更集中的赛事时间表、官方文件或最新动态，
+      <a href="https://official-main-united2026.com">世界杯</a>
+      这一节收录了经过核对的赛程与主办方公告链接，方便直接取用。
+    </p>
+    <div class="small-meta">
+      索引总览 · 信息截止 2025 · 页面内容仅供资料参考
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
